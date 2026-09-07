@@ -1,0 +1,1869 @@
+{
+  "simulations": [
+    {
+      "id": "forTotal",
+      "label": "For Loop — Running Total",
+      "code": [
+        "let numbers = [3, 5, 2, 8]",
+        "var total = 0",
+        "var largeNumbers = 0",
+        "",
+        "for number in numbers {",
+        "    total += number",
+        "",
+        "    if number >= 5 {",
+        "        largeNumbers += 1",
+        "    }",
+        "}",
+        "",
+        "print(\"Total: \\(total)\")"
+      ],
+      "practice": {
+        "title": "Running Total Challenge",
+        "prompt": "Without running the code, work out the final values of total and largeNumbers. Also write the values of total after each iteration.",
+        "code": "let scores = [4, 7, 3, 6]\n\nvar total = 0\nvar largeNumbers = 0\n\nfor score in scores {\n    total += score\n\n    if score >= 5 {\n        largeNumbers += 1\n    }\n}",
+        "explanation": "The loop visits 4, 7, 3 and 6 in order. total becomes 4, then 11, then 14, then 20. Only 7 and 6 satisfy score >= 5.",
+        "answer": "total after each iteration:\n4 → 11 → 14 → 20\n\nFinal total = 20\nFinal largeNumbers = 2"
+      },
+      "steps": [
+        {
+          "line": 1,
+          "iteration": "Setup",
+          "vars": {
+            "total": 0,
+            "largeNumbers": 0
+          },
+          "explanation": "Swift creates the numbers array.",
+          "current": -1,
+          "output": ""
+        },
+        {
+          "line": 2,
+          "iteration": "Setup",
+          "vars": {
+            "total": 0,
+            "largeNumbers": 0
+          },
+          "explanation": "total starts at 0.",
+          "current": -1,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 3,
+            "total": 0,
+            "largeNumbers": 0
+          },
+          "explanation": "The for loop takes 3 from the sequence.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 3,
+            "total": 3,
+            "largeNumbers": 0
+          },
+          "explanation": "3 is added to total. total is now 3.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 3,
+            "total": 3,
+            "largeNumbers": 0,
+            "number >= 5": false
+          },
+          "explanation": "Swift checks whether 3 >= 5.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 5,
+            "total": 3,
+            "largeNumbers": 0
+          },
+          "explanation": "The for loop takes 5 from the sequence.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 5,
+            "total": 8,
+            "largeNumbers": 0
+          },
+          "explanation": "5 is added to total. total is now 8.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 5,
+            "total": 8,
+            "largeNumbers": 0,
+            "number >= 5": true
+          },
+          "explanation": "Swift checks whether 5 >= 5.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 5,
+            "total": 8,
+            "largeNumbers": 1
+          },
+          "explanation": "The condition is true, so largeNumbers increases.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 2,
+            "total": 8,
+            "largeNumbers": 1
+          },
+          "explanation": "The for loop takes 2 from the sequence.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 2,
+            "total": 10,
+            "largeNumbers": 1
+          },
+          "explanation": "2 is added to total. total is now 10.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 2,
+            "total": 10,
+            "largeNumbers": 1,
+            "number >= 5": false
+          },
+          "explanation": "Swift checks whether 2 >= 5.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 8,
+            "total": 10,
+            "largeNumbers": 1
+          },
+          "explanation": "The for loop takes 8 from the sequence.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 8,
+            "total": 18,
+            "largeNumbers": 1
+          },
+          "explanation": "8 is added to total. total is now 18.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 8,
+            "total": 18,
+            "largeNumbers": 1,
+            "number >= 5": true
+          },
+          "explanation": "Swift checks whether 8 >= 5.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 8,
+            "total": 18,
+            "largeNumbers": 2
+          },
+          "explanation": "The condition is true, so largeNumbers increases.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 13,
+          "iteration": "Finished",
+          "vars": {
+            "total": 18,
+            "largeNumbers": 2
+          },
+          "explanation": "The loop has visited every value in numbers.",
+          "current": 4,
+          "output": "Total: 18\nLarge numbers: 2"
+        }
+      ],
+      "sequence": [
+        3,
+        5,
+        2,
+        8
+      ]
+    },
+    {
+      "id": "forSquares",
+      "label": "For Loop — Squares & Conditionals",
+      "code": [
+        "var sum = 0",
+        "var evenSquares = 0",
+        "",
+        "for number in 1...6 {",
+        "    let square = number * number",
+        "    sum += square",
+        "",
+        "    if square % 2 == 0 {",
+        "        evenSquares += 1",
+        "    }",
+        "}"
+      ],
+      "practice": {
+        "title": "Squares & Conditionals Challenge",
+        "prompt": "Trace the loop. What is the final value of sum? How many values increase evenSquares?",
+        "code": "var sum = 0\nvar evenSquares = 0\n\nfor number in 2...5 {\n    let square = number * number\n    sum += square\n\n    if square % 2 == 0 {\n        evenSquares += 1\n    }\n}",
+        "explanation": "The squares are 4, 9, 16 and 25. Their total is 54. The even squares are 4 and 16.",
+        "answer": "Squares:\n2² = 4\n3² = 9\n4² = 16\n5² = 25\n\nsum = 54\nevenSquares = 2"
+      },
+      "steps": [
+        {
+          "line": 4,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 1,
+            "square": "not calculated",
+            "sum": 0,
+            "evenSquares": 0
+          },
+          "explanation": "number receives the next value: 1.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 1,
+            "square": 1,
+            "sum": 0,
+            "evenSquares": 0
+          },
+          "explanation": "1 × 1 gives a square of 1.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 1,
+            "square": 1,
+            "sum": 1,
+            "evenSquares": 0
+          },
+          "explanation": "The square is added to sum.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 1",
+          "vars": {
+            "number": 1,
+            "square": 1,
+            "sum": 1,
+            "evenSquares": 0,
+            "square is even": false
+          },
+          "explanation": "1 % 2 is 1. The condition is false.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 4,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 2,
+            "square": "not calculated",
+            "sum": 1,
+            "evenSquares": 0
+          },
+          "explanation": "number receives the next value: 2.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 2,
+            "square": 4,
+            "sum": 1,
+            "evenSquares": 0
+          },
+          "explanation": "2 × 2 gives a square of 4.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 2,
+            "square": 4,
+            "sum": 5,
+            "evenSquares": 0
+          },
+          "explanation": "The square is added to sum.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 2,
+            "square": 4,
+            "sum": 5,
+            "evenSquares": 0,
+            "square is even": true
+          },
+          "explanation": "4 % 2 is 0. The condition is true.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Iteration 2",
+          "vars": {
+            "number": 2,
+            "square": 4,
+            "sum": 5,
+            "evenSquares": 1
+          },
+          "explanation": "Because the square is even, evenSquares increases.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 4,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 3,
+            "square": "not calculated",
+            "sum": 5,
+            "evenSquares": 1
+          },
+          "explanation": "number receives the next value: 3.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 3,
+            "square": 9,
+            "sum": 5,
+            "evenSquares": 1
+          },
+          "explanation": "3 × 3 gives a square of 9.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 3,
+            "square": 9,
+            "sum": 14,
+            "evenSquares": 1
+          },
+          "explanation": "The square is added to sum.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 3",
+          "vars": {
+            "number": 3,
+            "square": 9,
+            "sum": 14,
+            "evenSquares": 1,
+            "square is even": false
+          },
+          "explanation": "9 % 2 is 1. The condition is false.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 4,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 4,
+            "square": "not calculated",
+            "sum": 14,
+            "evenSquares": 1
+          },
+          "explanation": "number receives the next value: 4.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 4,
+            "square": 16,
+            "sum": 14,
+            "evenSquares": 1
+          },
+          "explanation": "4 × 4 gives a square of 16.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 4,
+            "square": 16,
+            "sum": 30,
+            "evenSquares": 1
+          },
+          "explanation": "The square is added to sum.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 4,
+            "square": 16,
+            "sum": 30,
+            "evenSquares": 1,
+            "square is even": true
+          },
+          "explanation": "16 % 2 is 0. The condition is true.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Iteration 4",
+          "vars": {
+            "number": 4,
+            "square": 16,
+            "sum": 30,
+            "evenSquares": 2
+          },
+          "explanation": "Because the square is even, evenSquares increases.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 4,
+          "iteration": "Iteration 5",
+          "vars": {
+            "number": 5,
+            "square": "not calculated",
+            "sum": 30,
+            "evenSquares": 2
+          },
+          "explanation": "number receives the next value: 5.",
+          "current": 4,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 5",
+          "vars": {
+            "number": 5,
+            "square": 25,
+            "sum": 30,
+            "evenSquares": 2
+          },
+          "explanation": "5 × 5 gives a square of 25.",
+          "current": 4,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 5",
+          "vars": {
+            "number": 5,
+            "square": 25,
+            "sum": 55,
+            "evenSquares": 2
+          },
+          "explanation": "The square is added to sum.",
+          "current": 4,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 5",
+          "vars": {
+            "number": 5,
+            "square": 25,
+            "sum": 55,
+            "evenSquares": 2,
+            "square is even": false
+          },
+          "explanation": "25 % 2 is 1. The condition is false.",
+          "current": 4,
+          "output": ""
+        },
+        {
+          "line": 4,
+          "iteration": "Iteration 6",
+          "vars": {
+            "number": 6,
+            "square": "not calculated",
+            "sum": 55,
+            "evenSquares": 2
+          },
+          "explanation": "number receives the next value: 6.",
+          "current": 5,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 6",
+          "vars": {
+            "number": 6,
+            "square": 36,
+            "sum": 55,
+            "evenSquares": 2
+          },
+          "explanation": "6 × 6 gives a square of 36.",
+          "current": 5,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 6",
+          "vars": {
+            "number": 6,
+            "square": 36,
+            "sum": 91,
+            "evenSquares": 2
+          },
+          "explanation": "The square is added to sum.",
+          "current": 5,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Iteration 6",
+          "vars": {
+            "number": 6,
+            "square": 36,
+            "sum": 91,
+            "evenSquares": 2,
+            "square is even": true
+          },
+          "explanation": "36 % 2 is 0. The condition is true.",
+          "current": 5,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Iteration 6",
+          "vars": {
+            "number": 6,
+            "square": 36,
+            "sum": 91,
+            "evenSquares": 3
+          },
+          "explanation": "Because the square is even, evenSquares increases.",
+          "current": 5,
+          "output": ""
+        }
+      ],
+      "sequence": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "whileCountdown",
+      "label": "While Loop — Countdown",
+      "code": [
+        "var count = 5",
+        "var secondsPassed = 0",
+        "",
+        "while count > 0 {",
+        "    print(\"\\(count)...\")",
+        "    count -= 1",
+        "    secondsPassed += 1",
+        "}",
+        "",
+        "print(\"GO!\")"
+      ],
+      "practice": {
+        "title": "While Loop Countdown Challenge",
+        "prompt": "How many times does the while loop execute? What are the final values of count and steps?",
+        "code": "var count = 8\nvar steps = 0\n\nwhile count > 2 {\n    count -= 2\n    steps += 1\n}",
+        "explanation": "count starts at 8 and becomes 6, 4, then 2. Once count is 2, the condition count > 2 becomes false.",
+        "answer": "Iteration 1: count = 6, steps = 1\nIteration 2: count = 4, steps = 2\nIteration 3: count = 2, steps = 3\n\nLoop executions = 3\nFinal count = 2\nFinal steps = 3"
+      },
+      "steps": [
+        {
+          "line": 4,
+          "iteration": "While check 1",
+          "vars": {
+            "count": 5,
+            "secondsPassed": 0,
+            "count > 0": true
+          },
+          "explanation": "5 > 0 is true, so the loop executes.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 1",
+          "vars": {
+            "count": 5,
+            "secondsPassed": 0
+          },
+          "explanation": "Swift prints 5.",
+          "current": 0,
+          "output": "5...\n"
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 1",
+          "vars": {
+            "count": 4,
+            "secondsPassed": 0
+          },
+          "explanation": "count decreases by 1.",
+          "current": 0,
+          "output": "5...\n"
+        },
+        {
+          "line": 7,
+          "iteration": "Iteration 1",
+          "vars": {
+            "count": 4,
+            "secondsPassed": 1
+          },
+          "explanation": "secondsPassed increases by 1.",
+          "current": 0,
+          "output": "5...\n"
+        },
+        {
+          "line": 4,
+          "iteration": "While check 2",
+          "vars": {
+            "count": 4,
+            "secondsPassed": 1,
+            "count > 0": true
+          },
+          "explanation": "4 > 0 is true, so the loop executes.",
+          "current": 1,
+          "output": "5...\n"
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 2",
+          "vars": {
+            "count": 4,
+            "secondsPassed": 1
+          },
+          "explanation": "Swift prints 4.",
+          "current": 1,
+          "output": "5...\n4...\n"
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 2",
+          "vars": {
+            "count": 3,
+            "secondsPassed": 1
+          },
+          "explanation": "count decreases by 1.",
+          "current": 1,
+          "output": "5...\n4...\n"
+        },
+        {
+          "line": 7,
+          "iteration": "Iteration 2",
+          "vars": {
+            "count": 3,
+            "secondsPassed": 2
+          },
+          "explanation": "secondsPassed increases by 1.",
+          "current": 1,
+          "output": "5...\n4...\n"
+        },
+        {
+          "line": 4,
+          "iteration": "While check 3",
+          "vars": {
+            "count": 3,
+            "secondsPassed": 2,
+            "count > 0": true
+          },
+          "explanation": "3 > 0 is true, so the loop executes.",
+          "current": 2,
+          "output": "5...\n4...\n"
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 3",
+          "vars": {
+            "count": 3,
+            "secondsPassed": 2
+          },
+          "explanation": "Swift prints 3.",
+          "current": 2,
+          "output": "5...\n4...\n3...\n"
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 3",
+          "vars": {
+            "count": 2,
+            "secondsPassed": 2
+          },
+          "explanation": "count decreases by 1.",
+          "current": 2,
+          "output": "5...\n4...\n3...\n"
+        },
+        {
+          "line": 7,
+          "iteration": "Iteration 3",
+          "vars": {
+            "count": 2,
+            "secondsPassed": 3
+          },
+          "explanation": "secondsPassed increases by 1.",
+          "current": 2,
+          "output": "5...\n4...\n3...\n"
+        },
+        {
+          "line": 4,
+          "iteration": "While check 4",
+          "vars": {
+            "count": 2,
+            "secondsPassed": 3,
+            "count > 0": true
+          },
+          "explanation": "2 > 0 is true, so the loop executes.",
+          "current": 3,
+          "output": "5...\n4...\n3...\n"
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 4",
+          "vars": {
+            "count": 2,
+            "secondsPassed": 3
+          },
+          "explanation": "Swift prints 2.",
+          "current": 3,
+          "output": "5...\n4...\n3...\n2...\n"
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 4",
+          "vars": {
+            "count": 1,
+            "secondsPassed": 3
+          },
+          "explanation": "count decreases by 1.",
+          "current": 3,
+          "output": "5...\n4...\n3...\n2...\n"
+        },
+        {
+          "line": 7,
+          "iteration": "Iteration 4",
+          "vars": {
+            "count": 1,
+            "secondsPassed": 4
+          },
+          "explanation": "secondsPassed increases by 1.",
+          "current": 3,
+          "output": "5...\n4...\n3...\n2...\n"
+        },
+        {
+          "line": 4,
+          "iteration": "While check 5",
+          "vars": {
+            "count": 1,
+            "secondsPassed": 4,
+            "count > 0": true
+          },
+          "explanation": "1 > 0 is true, so the loop executes.",
+          "current": 4,
+          "output": "5...\n4...\n3...\n2...\n"
+        },
+        {
+          "line": 5,
+          "iteration": "Iteration 5",
+          "vars": {
+            "count": 1,
+            "secondsPassed": 4
+          },
+          "explanation": "Swift prints 1.",
+          "current": 4,
+          "output": "5...\n4...\n3...\n2...\n1...\n"
+        },
+        {
+          "line": 6,
+          "iteration": "Iteration 5",
+          "vars": {
+            "count": 0,
+            "secondsPassed": 4
+          },
+          "explanation": "count decreases by 1.",
+          "current": 4,
+          "output": "5...\n4...\n3...\n2...\n1...\n"
+        },
+        {
+          "line": 7,
+          "iteration": "Iteration 5",
+          "vars": {
+            "count": 0,
+            "secondsPassed": 5
+          },
+          "explanation": "secondsPassed increases by 1.",
+          "current": 4,
+          "output": "5...\n4...\n3...\n2...\n1...\n"
+        },
+        {
+          "line": 10,
+          "iteration": "Finished",
+          "vars": {
+            "count": 0,
+            "secondsPassed": 5,
+            "count > 0": false
+          },
+          "explanation": "count > 0 is now false. The while loop stops.",
+          "current": 5,
+          "output": "5...\n4...\n3...\n2...\n1...\nGO!"
+        }
+      ],
+      "sequence": [
+        5,
+        4,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "id": "whileSavings",
+      "label": "While Loop — Savings Target",
+      "code": [
+        "var balance = 4",
+        "var week = 0",
+        "let target = 25",
+        "",
+        "while balance < target {",
+        "    week += 1",
+        "    let deposit = week * 3",
+        "    balance += deposit",
+        "",
+        "    if balance > target {",
+        "        balance = target",
+        "    }",
+        "}"
+      ],
+      "practice": {
+        "title": "Changing Variables Challenge",
+        "prompt": "Trace balance, month and deposit. On which month does the loop stop, and what is the final balance?",
+        "code": "var balance = 5\nvar month = 0\nlet target = 30\n\nwhile balance < target {\n    month += 1\n    let deposit = month * 4\n    balance += deposit\n\n    if balance > target {\n        balance = target\n    }\n}",
+        "explanation": "Deposits increase each month: 4, 8, 12 and 16. The balance moves 5 → 9 → 17 → 29 → 45, then the conditional caps it at 30.",
+        "answer": "Month 1: deposit = 4, balance = 9\nMonth 2: deposit = 8, balance = 17\nMonth 3: deposit = 12, balance = 29\nMonth 4: deposit = 16, balance = 45\n\n45 > 30, so balance becomes 30.\n\nLoop stops after month 4.\nFinal balance = 30"
+      },
+      "steps": [
+        {
+          "line": 5,
+          "iteration": "Check before week 1",
+          "vars": {
+            "balance": 4,
+            "week": 0,
+            "target": 25,
+            "balance < target": true
+          },
+          "explanation": "4 is below the target of 25, so the loop continues.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Week 1",
+          "vars": {
+            "balance": 4,
+            "week": 1,
+            "target": 25
+          },
+          "explanation": "week increases to 1.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Week 1",
+          "vars": {
+            "balance": 4,
+            "week": 1,
+            "deposit": 3,
+            "target": 25
+          },
+          "explanation": "deposit = 1 × 3 = 3.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Week 1",
+          "vars": {
+            "balance": 7,
+            "week": 1,
+            "deposit": 3,
+            "target": 25
+          },
+          "explanation": "3 is added to balance. Balance becomes 7.",
+          "current": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Check before week 2",
+          "vars": {
+            "balance": 7,
+            "week": 1,
+            "target": 25,
+            "balance < target": true
+          },
+          "explanation": "7 is below the target of 25, so the loop continues.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Week 2",
+          "vars": {
+            "balance": 7,
+            "week": 2,
+            "target": 25
+          },
+          "explanation": "week increases to 2.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Week 2",
+          "vars": {
+            "balance": 7,
+            "week": 2,
+            "deposit": 6,
+            "target": 25
+          },
+          "explanation": "deposit = 2 × 3 = 6.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Week 2",
+          "vars": {
+            "balance": 13,
+            "week": 2,
+            "deposit": 6,
+            "target": 25
+          },
+          "explanation": "6 is added to balance. Balance becomes 13.",
+          "current": 1,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Check before week 3",
+          "vars": {
+            "balance": 13,
+            "week": 2,
+            "target": 25,
+            "balance < target": true
+          },
+          "explanation": "13 is below the target of 25, so the loop continues.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Week 3",
+          "vars": {
+            "balance": 13,
+            "week": 3,
+            "target": 25
+          },
+          "explanation": "week increases to 3.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Week 3",
+          "vars": {
+            "balance": 13,
+            "week": 3,
+            "deposit": 9,
+            "target": 25
+          },
+          "explanation": "deposit = 3 × 3 = 9.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Week 3",
+          "vars": {
+            "balance": 22,
+            "week": 3,
+            "deposit": 9,
+            "target": 25
+          },
+          "explanation": "9 is added to balance. Balance becomes 22.",
+          "current": 2,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Check before week 4",
+          "vars": {
+            "balance": 22,
+            "week": 3,
+            "target": 25,
+            "balance < target": true
+          },
+          "explanation": "22 is below the target of 25, so the loop continues.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 6,
+          "iteration": "Week 4",
+          "vars": {
+            "balance": 22,
+            "week": 4,
+            "target": 25
+          },
+          "explanation": "week increases to 4.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Week 4",
+          "vars": {
+            "balance": 22,
+            "week": 4,
+            "deposit": 12,
+            "target": 25
+          },
+          "explanation": "deposit = 4 × 3 = 12.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 8,
+          "iteration": "Week 4",
+          "vars": {
+            "balance": 34,
+            "week": 4,
+            "deposit": 12,
+            "target": 25
+          },
+          "explanation": "12 is added to balance. Balance becomes 34.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Week 4",
+          "vars": {
+            "balance": 34,
+            "week": 4,
+            "deposit": 12,
+            "target": 25,
+            "balance > target": true
+          },
+          "explanation": "34 is greater than 25, so the if statement runs.",
+          "current": 3,
+          "output": ""
+        },
+        {
+          "line": 11,
+          "iteration": "Week 4",
+          "vars": {
+            "balance": 25,
+            "week": 4,
+            "deposit": 12,
+            "target": 25
+          },
+          "explanation": "balance is capped at the target: 25.",
+          "current": 3,
+          "output": ""
+        }
+      ],
+      "sequence": [
+        "W1",
+        "W2",
+        "W3",
+        "W4"
+      ]
+    },
+    {
+      "id": "nested",
+      "label": "Nested Loop — Rows, Columns & Conditionals",
+      "code": [
+        "var evenProducts = 0",
+        "",
+        "for row in 1...3 {",
+        "",
+        "    for column in 1...4 {",
+        "",
+        "        let product = row * column",
+        "",
+        "        if product % 2 == 0 {",
+        "            evenProducts += 1",
+        "        }",
+        "    }",
+        "}"
+      ],
+      "practice": {
+        "title": "Nested Loop Challenge",
+        "prompt": "How many times does the inner loop execute in total? What is the final value of matches?",
+        "code": "var matches = 0\n\nfor row in 1...3 {\n    for column in 1...3 {\n        let value = row + column\n\n        if value > 4 {\n            matches += 1\n        }\n    }\n}",
+        "explanation": "There are 3 outer-loop iterations and 3 inner-loop iterations for each row, giving 9 combinations. Values greater than 4 occur at (2,3), (3,2) and (3,3).",
+        "answer": "Total inner-loop executions = 3 × 3 = 9\n\nrow 1:\n1+1=2\n1+2=3\n1+3=4\n\nrow 2:\n2+1=3\n2+2=4\n2+3=5 ✓\n\nrow 3:\n3+1=4\n3+2=5 ✓\n3+3=6 ✓\n\nFinal matches = 3"
+      },
+      "steps": [
+        {
+          "line": 3,
+          "iteration": "Outer loop — Row 1",
+          "vars": {
+            "row": 1,
+            "evenProducts": 0
+          },
+          "explanation": "The outer loop moves to row 1.",
+          "row": 1,
+          "column": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 1, Column 1",
+          "vars": {
+            "row": 1,
+            "column": 1,
+            "evenProducts": 0
+          },
+          "explanation": "The inner loop moves to column 1.",
+          "row": 1,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 1, Column 1",
+          "vars": {
+            "row": 1,
+            "column": 1,
+            "product": 1,
+            "evenProducts": 0
+          },
+          "explanation": "1 × 1 = 1.",
+          "row": 1,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 1, Column 1",
+          "vars": {
+            "row": 1,
+            "column": 1,
+            "product": 1,
+            "evenProducts": 0,
+            "product is even": false
+          },
+          "explanation": "1 % 2 = 1. Condition is false.",
+          "row": 1,
+          "column": 1,
+          "match": false,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 1, Column 2",
+          "vars": {
+            "row": 1,
+            "column": 2,
+            "evenProducts": 0
+          },
+          "explanation": "The inner loop moves to column 2.",
+          "row": 1,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 1, Column 2",
+          "vars": {
+            "row": 1,
+            "column": 2,
+            "product": 2,
+            "evenProducts": 0
+          },
+          "explanation": "1 × 2 = 2.",
+          "row": 1,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 1, Column 2",
+          "vars": {
+            "row": 1,
+            "column": 2,
+            "product": 2,
+            "evenProducts": 0,
+            "product is even": true
+          },
+          "explanation": "2 % 2 = 0. Condition is true.",
+          "row": 1,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 1, Column 2",
+          "vars": {
+            "row": 1,
+            "column": 2,
+            "product": 2,
+            "evenProducts": 1
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 1,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 1, Column 3",
+          "vars": {
+            "row": 1,
+            "column": 3,
+            "evenProducts": 1
+          },
+          "explanation": "The inner loop moves to column 3.",
+          "row": 1,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 1, Column 3",
+          "vars": {
+            "row": 1,
+            "column": 3,
+            "product": 3,
+            "evenProducts": 1
+          },
+          "explanation": "1 × 3 = 3.",
+          "row": 1,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 1, Column 3",
+          "vars": {
+            "row": 1,
+            "column": 3,
+            "product": 3,
+            "evenProducts": 1,
+            "product is even": false
+          },
+          "explanation": "3 % 2 = 1. Condition is false.",
+          "row": 1,
+          "column": 3,
+          "match": false,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 1, Column 4",
+          "vars": {
+            "row": 1,
+            "column": 4,
+            "evenProducts": 1
+          },
+          "explanation": "The inner loop moves to column 4.",
+          "row": 1,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 1, Column 4",
+          "vars": {
+            "row": 1,
+            "column": 4,
+            "product": 4,
+            "evenProducts": 1
+          },
+          "explanation": "1 × 4 = 4.",
+          "row": 1,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 1, Column 4",
+          "vars": {
+            "row": 1,
+            "column": 4,
+            "product": 4,
+            "evenProducts": 1,
+            "product is even": true
+          },
+          "explanation": "4 % 2 = 0. Condition is true.",
+          "row": 1,
+          "column": 4,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 1, Column 4",
+          "vars": {
+            "row": 1,
+            "column": 4,
+            "product": 4,
+            "evenProducts": 2
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 1,
+          "column": 4,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 3,
+          "iteration": "Outer loop — Row 2",
+          "vars": {
+            "row": 2,
+            "evenProducts": 2
+          },
+          "explanation": "The outer loop moves to row 2.",
+          "row": 2,
+          "column": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 2, Column 1",
+          "vars": {
+            "row": 2,
+            "column": 1,
+            "evenProducts": 2
+          },
+          "explanation": "The inner loop moves to column 1.",
+          "row": 2,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 2, Column 1",
+          "vars": {
+            "row": 2,
+            "column": 1,
+            "product": 2,
+            "evenProducts": 2
+          },
+          "explanation": "2 × 1 = 2.",
+          "row": 2,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 2, Column 1",
+          "vars": {
+            "row": 2,
+            "column": 1,
+            "product": 2,
+            "evenProducts": 2,
+            "product is even": true
+          },
+          "explanation": "2 % 2 = 0. Condition is true.",
+          "row": 2,
+          "column": 1,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 2, Column 1",
+          "vars": {
+            "row": 2,
+            "column": 1,
+            "product": 2,
+            "evenProducts": 3
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 2,
+          "column": 1,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 2, Column 2",
+          "vars": {
+            "row": 2,
+            "column": 2,
+            "evenProducts": 3
+          },
+          "explanation": "The inner loop moves to column 2.",
+          "row": 2,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 2, Column 2",
+          "vars": {
+            "row": 2,
+            "column": 2,
+            "product": 4,
+            "evenProducts": 3
+          },
+          "explanation": "2 × 2 = 4.",
+          "row": 2,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 2, Column 2",
+          "vars": {
+            "row": 2,
+            "column": 2,
+            "product": 4,
+            "evenProducts": 3,
+            "product is even": true
+          },
+          "explanation": "4 % 2 = 0. Condition is true.",
+          "row": 2,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 2, Column 2",
+          "vars": {
+            "row": 2,
+            "column": 2,
+            "product": 4,
+            "evenProducts": 4
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 2,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 2, Column 3",
+          "vars": {
+            "row": 2,
+            "column": 3,
+            "evenProducts": 4
+          },
+          "explanation": "The inner loop moves to column 3.",
+          "row": 2,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 2, Column 3",
+          "vars": {
+            "row": 2,
+            "column": 3,
+            "product": 6,
+            "evenProducts": 4
+          },
+          "explanation": "2 × 3 = 6.",
+          "row": 2,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 2, Column 3",
+          "vars": {
+            "row": 2,
+            "column": 3,
+            "product": 6,
+            "evenProducts": 4,
+            "product is even": true
+          },
+          "explanation": "6 % 2 = 0. Condition is true.",
+          "row": 2,
+          "column": 3,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 2, Column 3",
+          "vars": {
+            "row": 2,
+            "column": 3,
+            "product": 6,
+            "evenProducts": 5
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 2,
+          "column": 3,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 2, Column 4",
+          "vars": {
+            "row": 2,
+            "column": 4,
+            "evenProducts": 5
+          },
+          "explanation": "The inner loop moves to column 4.",
+          "row": 2,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 2, Column 4",
+          "vars": {
+            "row": 2,
+            "column": 4,
+            "product": 8,
+            "evenProducts": 5
+          },
+          "explanation": "2 × 4 = 8.",
+          "row": 2,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 2, Column 4",
+          "vars": {
+            "row": 2,
+            "column": 4,
+            "product": 8,
+            "evenProducts": 5,
+            "product is even": true
+          },
+          "explanation": "8 % 2 = 0. Condition is true.",
+          "row": 2,
+          "column": 4,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 2, Column 4",
+          "vars": {
+            "row": 2,
+            "column": 4,
+            "product": 8,
+            "evenProducts": 6
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 2,
+          "column": 4,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 3,
+          "iteration": "Outer loop — Row 3",
+          "vars": {
+            "row": 3,
+            "evenProducts": 6
+          },
+          "explanation": "The outer loop moves to row 3.",
+          "row": 3,
+          "column": 0,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 3, Column 1",
+          "vars": {
+            "row": 3,
+            "column": 1,
+            "evenProducts": 6
+          },
+          "explanation": "The inner loop moves to column 1.",
+          "row": 3,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 3, Column 1",
+          "vars": {
+            "row": 3,
+            "column": 1,
+            "product": 3,
+            "evenProducts": 6
+          },
+          "explanation": "3 × 1 = 3.",
+          "row": 3,
+          "column": 1,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 3, Column 1",
+          "vars": {
+            "row": 3,
+            "column": 1,
+            "product": 3,
+            "evenProducts": 6,
+            "product is even": false
+          },
+          "explanation": "3 % 2 = 1. Condition is false.",
+          "row": 3,
+          "column": 1,
+          "match": false,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 3, Column 2",
+          "vars": {
+            "row": 3,
+            "column": 2,
+            "evenProducts": 6
+          },
+          "explanation": "The inner loop moves to column 2.",
+          "row": 3,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 3, Column 2",
+          "vars": {
+            "row": 3,
+            "column": 2,
+            "product": 6,
+            "evenProducts": 6
+          },
+          "explanation": "3 × 2 = 6.",
+          "row": 3,
+          "column": 2,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 3, Column 2",
+          "vars": {
+            "row": 3,
+            "column": 2,
+            "product": 6,
+            "evenProducts": 6,
+            "product is even": true
+          },
+          "explanation": "6 % 2 = 0. Condition is true.",
+          "row": 3,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 3, Column 2",
+          "vars": {
+            "row": 3,
+            "column": 2,
+            "product": 6,
+            "evenProducts": 7
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 3,
+          "column": 2,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 3, Column 3",
+          "vars": {
+            "row": 3,
+            "column": 3,
+            "evenProducts": 7
+          },
+          "explanation": "The inner loop moves to column 3.",
+          "row": 3,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 3, Column 3",
+          "vars": {
+            "row": 3,
+            "column": 3,
+            "product": 9,
+            "evenProducts": 7
+          },
+          "explanation": "3 × 3 = 9.",
+          "row": 3,
+          "column": 3,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 3, Column 3",
+          "vars": {
+            "row": 3,
+            "column": 3,
+            "product": 9,
+            "evenProducts": 7,
+            "product is even": false
+          },
+          "explanation": "9 % 2 = 1. Condition is false.",
+          "row": 3,
+          "column": 3,
+          "match": false,
+          "output": ""
+        },
+        {
+          "line": 5,
+          "iteration": "Row 3, Column 4",
+          "vars": {
+            "row": 3,
+            "column": 4,
+            "evenProducts": 7
+          },
+          "explanation": "The inner loop moves to column 4.",
+          "row": 3,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 7,
+          "iteration": "Row 3, Column 4",
+          "vars": {
+            "row": 3,
+            "column": 4,
+            "product": 12,
+            "evenProducts": 7
+          },
+          "explanation": "3 × 4 = 12.",
+          "row": 3,
+          "column": 4,
+          "output": ""
+        },
+        {
+          "line": 9,
+          "iteration": "Row 3, Column 4",
+          "vars": {
+            "row": 3,
+            "column": 4,
+            "product": 12,
+            "evenProducts": 7,
+            "product is even": true
+          },
+          "explanation": "12 % 2 = 0. Condition is true.",
+          "row": 3,
+          "column": 4,
+          "match": true,
+          "output": ""
+        },
+        {
+          "line": 10,
+          "iteration": "Row 3, Column 4",
+          "vars": {
+            "row": 3,
+            "column": 4,
+            "product": 12,
+            "evenProducts": 8
+          },
+          "explanation": "The product is even, so evenProducts increases.",
+          "row": 3,
+          "column": 4,
+          "match": true,
+          "output": ""
+        }
+      ],
+      "grid": true
+    }
+  ]
+}

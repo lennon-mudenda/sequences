@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swift Loop & Sequence Visualiser</title>
+
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+
+<body>
+
+<div class="page-shell">
+
+<header>
+    <div class="hero">
+        <div>
+            <div class="eyebrow">Swift Visual Lab</div>
+            <h1>Swift Loop & Sequence Visualiser</h1>
+            <p>Step through loops, track variable changes, and practise tracing.</p>
+        </div>
+
+        <div class="hero-stats" aria-label="Learning overview">
+            <div class="hero-stat">
+                <div class="hero-stat-label">Active Lesson</div>
+                <div class="hero-stat-value" id="heroMode">For Loop</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-label">Trace Steps</div>
+                <div class="hero-stat-value" id="heroSteps">0</div>
+            </div>
+            <div class="hero-stat">
+                <div class="hero-stat-label">Progress</div>
+                <div class="hero-stat-value" id="heroProgress">Ready</div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="toolbar">
+    <div class="toolbar-group">
+        <select id="exampleSelect" aria-label="Choose a loop example">
+            <option value="">Loading lessons...</option>
+        </select>
+    </div>
+
+    <div class="toolbar-group">
+        <button id="previousBtn" type="button">← Previous</button>
+        <button id="nextBtn" type="button" class="primary">Next Step →</button>
+        <button id="playBtn" type="button">▶ Auto Play</button>
+        <button id="resetBtn" type="button">Reset</button>
+    </div>
+</div>
+
+<div class="container">
+
+    <section class="panel">
+        <div class="panel-title">Swift Code</div>
+        <div class="code" id="code"></div>
+    </section>
+
+    <div class="right-column">
+
+        <section class="panel">
+            <div class="panel-title">Current Step</div>
+
+            <div class="status">
+                <div class="status-summary">
+                    <div class="summary-pill">
+                        <div class="summary-label">Lesson</div>
+                        <div class="summary-value" id="summaryExample">For Loop</div>
+                    </div>
+                    <div class="summary-pill">
+                        <div class="summary-label">Step</div>
+                        <div class="summary-value" id="summaryStep">0 / 0</div>
+                    </div>
+                    <div class="summary-pill">
+                        <div class="summary-label">Focus</div>
+                        <div class="summary-value" id="summaryFocus">Waiting</div>
+                    </div>
+                </div>
+                <div class="iteration" id="iteration">Ready</div>
+                <div class="explanation" id="explanation">
+                    Press Next Step to begin.
+                </div>
+            </div>
+
+            <div class="progress-wrapper">
+                <div class="progress-meta">
+                    <span>Trace progress</span>
+                    <span id="progressLabel">0%</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress" id="progress"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Variables in Memory</div>
+            <div class="variables" id="variables"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Visual Sequence</div>
+            <div class="visual-area" id="visual"></div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-title">Console Output</div>
+            <div class="output" id="output">Waiting...</div>
+        </section>
+
+    </div>
+
+    <section class="panel practice">
+        <div class="panel-title">Timed Practice</div>
+
+        <div class="practice-body">
+
+            <div class="practice-top">
+
+                <div class="practice-question">
+                    <h2 id="practiceTitle">Practice Question</h2>
+                    <p id="practicePrompt"></p>
+                    <div class="practice-code" id="practiceCode"></div>
+                </div>
+
+                <aside class="timer-card" aria-label="Practice timer">
+                    <div class="timer-label">Practice time</div>
+                    <div class="timer-display" id="timerDisplay" aria-live="polite">01:00</div>
+
+                    <div class="timer-controls">
+                        <button id="minusTimeBtn" type="button" aria-label="Reduce practice time by 30 seconds">−30s</button>
+                        <div class="time-value" id="timeValue">60 sec</div>
+                        <button id="plusTimeBtn" type="button" aria-label="Increase practice time by 30 seconds">+30s</button>
+                    </div>
+                </aside>
+
+            </div>
+
+            <div class="practice-actions">
+                <button id="startPracticeBtn" type="button" class="primary">Start Practice</button>
+                <button id="revealAnswerBtn" type="button" class="success" disabled>Reveal Answer</button>
+                <button id="resetPracticeBtn" type="button">Reset Practice</button>
+            </div>
+
+            <p class="practice-note" id="practiceNote">
+                Set the time in 30-second increments, then start the practice question.
+            </p>
+
+            <div class="answer hidden" id="answerBox">
+                <h3>Answer</h3>
+                <p id="answerExplanation"></p>
+                <div class="answer-code" id="answerCode"></div>
+            </div>
+
+        </div>
+    </section>
+
+</div>
+
+</div>
+
+<script src="assets/app.js" defer></script>
+
+</body>
+</html>
